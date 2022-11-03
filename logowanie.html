@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <link rel="stylesheet" href="logowanie.css">
 </head>
 <body>
-    <div class="center">
-        <h1>Login</h1>
-        <form method="post">
-            <div class="txt_field">
-                <input type="text" required>
-                <span></span>
-                <label>Username</label>
+    <div class="login-box">
+        <h2>Logowanie</h2>
+        <h5>Wprowadź dane logwania do strony <span style="color: red;">[STRONA]</span></h5>
+        <form id="login" name="login" action="#">
+            <div class="user-box">
+                <input type="text" id="username" required >
+                <label>Login</label>
             </div>
-
-            <div class="txt_field">
-                <input type="password" required>
-                <span></span>
-                <label>Password</label>
+            <div class="user-box">
+                <input type="text" id="password" required >
+                <label>Hasło</label>
             </div>
-
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login">
-            <div class="signup_link">
-                Not a member? <a href="#">Signup</a>
+            <div class="button-from">
+                <button id="submit" type="submit">Zalgouj</button>
             </div>
         </form>
     </div>
